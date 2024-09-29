@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function check_captcha($token) {
     $ch = curl_init();
     $args = http_build_query([
-        "secret" => 'ysc2_6rdCWQUNLN682IJwL58C35K5lhTLdb8iK6ByOYCidaf6b4b1',
+        "secret" => '*****',
         "token" => $token,
         "ip" => $_SERVER['REMOTE_ADDR'],
     ]);
@@ -54,7 +54,7 @@ function check_captcha($token) {
     Пароль: <input type="password" name="password" required><br>
     <!-- Yandex SmartCaptcha -->
     <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
-    <div class="smart-captcha" data-sitekey="ysc1_6rdCWQUNLN682IJwL58CjtZ39SKFqiIkKEBblvdo612db595"></div>
+    <div class="smart-captcha" data-sitekey="*****"></div>
     <!-- <div class="smart-captcha"></div> -->
     <button type="submit">Войти</button>
 </form>
